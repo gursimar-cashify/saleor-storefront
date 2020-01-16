@@ -1,7 +1,7 @@
 {
-  "baseUrl": "http://localhost:3000",
+  "baseUrl": "http://0.0.0.0:3000",
   "env": {
-    "API_URI": "http://localhost:8000/graphql/"
+    "API_URI": "http://0.0.0.0:8000/graphql/"
   },
   "viewportWidth": 1400,
   "viewportHeight": 660,
