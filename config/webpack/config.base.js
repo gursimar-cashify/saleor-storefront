@@ -27,8 +27,6 @@ module.exports = ({ sourceDir, distDir }) => ({
   devServer: {
     host: '0.0.0.0',
     port: 3000,
-    disableHostCheck: true,
-    open:true,
   },
   devtool: "source-map",
   module: {
@@ -113,7 +111,7 @@ module.exports = ({ sourceDir, distDir }) => ({
       },
     }),
     new webpack.EnvironmentPlugin({
-      API_URI: "http://0.0.0.0:8000/graphql/",
+      API_URI: "http://localhost:8000/graphql/",
       SERVICE_WORKER_TIMEOUT: "60000",
     }),
   ],
